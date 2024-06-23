@@ -1,0 +1,38 @@
+
+.side-menu {
+  width: 200px;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin: 10px 0;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.side-menu a i {
+  margin-right: 10px;
+}
+
+.side-menu a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
