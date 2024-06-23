@@ -34,5 +34,17 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.2"
-  }
+  },
+  "description": "Dashbaord with charts using Angular@16.0.3",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-sale7/angular-dashboard.git"
+  },
+  "author": "Ibrahim Saleh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/I-sale7/angular-dashboard/issues"
+  },
+  "homepage": "https://github.com/I-sale7/angular-dashboard#readme"
 }
