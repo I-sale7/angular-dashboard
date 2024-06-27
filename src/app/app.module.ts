@@ -17,6 +17,8 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { DistributionComponent } from './distribution/distribution.component';
 import { LiveWorkersComponent } from './live-workers/live-workers.component';
 import { NgxWeatherModule } from 'ngx-weather';
+import { WeatherWizardComponent } from './weather-wizard/weather-wizard.component';
+import { DetailedChartsComponent } from './detailed-charts/detailed-charts.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { NgxWeatherModule } from 'ngx-weather';
     LiveEventsComponent,
     DistributionComponent,
     LiveWorkersComponent,
+    WeatherWizardComponent,
+    DetailedChartsComponent,
   ],
   imports: [
     BrowserModule,

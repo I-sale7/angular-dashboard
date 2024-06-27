@@ -26,3 +26,46 @@
   opacity: 0.5;
   z-index: -1;
 }
+
+.detailed-live-events .top-section{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+}
+
+.chart-pins{
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  color: #B2BAC9;
+  background: #37393D;
+  border-radius: 7px;
+  padding: 14px 16px;
+}
+
+.chart-pins > *{
+  color: #B2BAC9;
+}
+.chart-pins > *:before{
+  content: '';
+  display: inline-block;
+  margin-right: 8px;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+}
+.chart-pins .alerts:before{
+  background-color: #FFB800;
+}
+
+.chart-pins .info:before{
+  background: #DEE7FA;
+}
+
+.chart-pins .alarms:before{
+  background: #BC4C34;
+}
