@@ -11,6 +11,12 @@ import { DomainComponent } from './domain/domain.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CardComponent } from './card/card.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { HeaderComponent } from './header/header.component';
+import { LiveEventsComponent } from './live-events/live-events.component';
+import { NgApexchartsModule } from "ng-apexcharts";
+import { DistributionComponent } from './distribution/distribution.component';
+import { LiveWorkersComponent } from './live-workers/live-workers.component';
+import { NgxWeatherModule } from 'ngx-weather';
 
 @NgModule({
   declarations: [
@@ -22,11 +28,19 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     DomainComponent,
     SettingsComponent,
     CardComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    HeaderComponent,
+    LiveEventsComponent,
+    DistributionComponent,
+    LiveWorkersComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgApexchartsModule,
+    NgxWeatherModule.forRoot({
+      apiKey: '7b4e9f07e0f94e358f394442242706'
+      }),
   ],
   providers: [],
   bootstrap: [AppComponent]

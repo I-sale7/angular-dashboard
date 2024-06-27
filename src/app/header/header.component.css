@@ -1,0 +1,57 @@
+/* Styles for the header */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #B2BAC9;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #37393D;
+  border: 1px solid #37393D;
+  border-radius: 12px;
+  padding: 5px 10px;
+  width: 380px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: transparent ;
+  width: 100%;
+}
+
+.search-bar i {
+  margin-right: 10px;
+  color: #B2BAC9;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
+.header-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #B2BAC9;
+  display: flex;
+  align-items: center;
+}
+
+.header-links i {
+  margin-right: 5px;
+}
+
+.user-image {
+  margin-left: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}

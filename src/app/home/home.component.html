@@ -1,1 +1,90 @@
-<p>home works!</p>
+<div class="grid">
+
+  <app-card class="width--full grid__box">
+    <div id="abcd-site" class="width--full abcd-site wrapper--flex">
+      <h2 class="no-margin width--full">
+        ABCD Site
+        <small class="wrapper--block font-weight--normal">RR1 Area</small>
+      </h2>
+
+      <div class="wrapper--flex">
+
+        <div class="active-people">
+          <h1 class="no-margin">1,148</h1>
+          <h3 class="no-margin">Active People</h3>
+        </div>
+
+        <div class="active-devices">
+          <h1 class="no-margin">1,148</h1>
+          <h3 class="no-margin">Active Devices</h3>
+        </div>
+
+      </div>
+    </div>
+  </app-card>
+    
+  <app-card class="grid__box">
+    <h2 class="card__title">
+      <span>
+        Live events
+        <i class="fas fa-arrow-down-long card__status-icon"></i>
+      </span>
+      <span class="card__info-icon">i</span>
+    </h2>
+
+    <!-- Live eevents Chart -->
+    <app-live-events></app-live-events>
+  </app-card>
+  
+  <div class="grid__box wrapper--flex flex-dir--column flex-justify--between height--full">
+    <app-card class="width--full">
+      <h2 class="card__title">
+        <span>
+          Devices Status Distribution
+          <i class="fas fa-arrow-down-long card__status-icon"></i>
+        </span>
+        <span class="card__info-icon">i</span>
+      </h2>
+      
+      <!-- Device Distribution -->
+  
+    </app-card>
+
+    <!-- Weather Wizard -->
+    <app-card class="width--full">
+      
+    </app-card>
+    
+  </div>
+  
+  <!-- Live Workers Trend per Zone -->
+  <div id="live-workers" class="grid__box grid--2">
+    <app-card class="width--full">
+      <h2 class="card__title">
+        <span>
+          Live Workers Trend per Zone
+          <i class="fas fa-arrow-down-long card__status-icon"></i>
+        </span>
+        <span class="card__info-icon">i</span>
+      </h2>
+      
+      <!-- Live Workers Chart-->
+      <app-live-workers></app-live-workers>
+    </app-card>
+  </div>
+  
+  <!-- People Hazardous Zone / Critical Mission -->
+  <div id="people-critical-zone" class="grid__box">
+    <app-card class="width--full">
+      <h2 class="card__title">
+        <span>
+          People Hazardous Zone / Critical Mission
+        </span>
+        <span class="card__info-icon">i</span>
+      </h2>
+      
+      <!-- List -->
+  
+    </app-card>
+  </div>
+</div>
