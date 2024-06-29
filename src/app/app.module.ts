@@ -1,39 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { RealtimeComponent } from './realtime/realtime.component';
-import { EventsComponent } from './events/events.component';
-import { DevicesComponent } from './devices/devices.component';
-import { DomainComponent } from './domain/domain.component';
-import { SettingsComponent } from './settings/settings.component';
-import { CardComponent } from './card/card.component';
-import { SideMenuComponent } from './side-menu/side-menu.component';
-import { HeaderComponent } from './header/header.component';
-import { LiveEventsComponent } from './live-events/live-events.component';
-import { NgApexchartsModule } from "ng-apexcharts";
-import { DistributionComponent } from './distribution/distribution.component';
-import { LiveWorkersComponent } from './live-workers/live-workers.component';
+import { LiveEventsComponent } from './features/live-events/live-events.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { LiveWorkersComponent } from './features/live-workers/live-workers.component';
 import { NgxWeatherModule } from 'ngx-weather';
-import { WeatherWizardComponent } from './weather-wizard/weather-wizard.component';
-import { DetailedChartsComponent } from './detailed-charts/detailed-charts.component';
+import { WeatherWizardComponent } from './features/weather-wizard/weather-wizard.component';
+import { DetailedChartsComponent } from './features/detailed-charts/detailed-charts.component';
+import { SharedModule } from './shared/shared.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RealtimeComponent,
-    EventsComponent,
-    DevicesComponent,
-    DomainComponent,
-    SettingsComponent,
-    CardComponent,
-    SideMenuComponent,
-    HeaderComponent,
     LiveEventsComponent,
-    DistributionComponent,
     LiveWorkersComponent,
     WeatherWizardComponent,
     DetailedChartsComponent,
@@ -41,12 +24,14 @@ import { DetailedChartsComponent } from './detailed-charts/detailed-charts.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
+    LayoutModule,
     NgApexchartsModule,
     NgxWeatherModule.forRoot({
-      apiKey: '7b4e9f07e0f94e358f394442242706'
-      }),
+      apiKey: '7b4e9f07e0f94e358f394442242706',
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

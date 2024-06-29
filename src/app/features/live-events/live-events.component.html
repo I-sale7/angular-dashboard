@@ -1,0 +1,67 @@
+<app-card class="grid__box h-full">
+  <div class="live-events">
+    <div>
+      <h2 class="card__title">
+        <span>
+          <span>
+            Live events
+            <i class="fas fa-arrow-down-long card__status-icon"></i>
+
+          </span>
+          <p class="text-secondary text-md mt-2">Current statistics for the events </p>
+        </span>
+        <span class="card__info-icon">i</span>
+      </h2>
+    </div>
+
+    <div class="totals">
+
+      <div class="total-info">
+        <div class="dot blue"></div>
+        <span class="flex gap-2 items-center">
+          {{ totalInfo }}
+          <span class="badge bg-dark text-success">
+            {{ totalInfoPercentage}}
+          </span>
+        </span>
+        <span class="text-secondary text-sm">
+          Total Info
+        </span>
+      </div>
+
+
+      <div class="total-alerts">
+        <div class="dot yellow"></div>
+        <span class="flex gap-2 items-center">
+          {{ totalAlerts }}
+          <span class="badge bg-dark text-success">
+            {{ totalAlertsPercentage }}
+          </span>
+        </span>
+        <span class="text-secondary text-sm">
+          Total Alerts
+        </span>
+      </div>
+      <div class="total-alarms">
+        <div class="dot red"></div>
+        <span class="flex gap-2 items-center">
+          {{ totalAlarms }}
+          <span class="badge bg-dark text-success">
+            {{ totalAlarmsPercentage }}
+          </span>
+        </span>
+        <span class="text-secondary text-sm">
+          Total Alarms
+        </span>
+      </div>
+
+    </div>
+
+    <apx-chart [series]="chartOptions.series" [theme]="chartOptions.theme" [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis" [dataLabels]="chartOptions.dataLabels!" [stroke]="chartOptions.stroke!"
+      [fill]="chartOptions.fill" [yaxis]="chartOptions.yaxis" [title]="chartOptions.title!" [grid]="chartOptions.grid"
+      [legend]="chartOptions.legend!" [tooltip]="chartOptions.tooltip!"></apx-chart>
+  </div>
+
+
+</app-card>

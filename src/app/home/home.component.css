@@ -2,12 +2,12 @@
   padding: 35px 27px 47px;
   position: relative;
   z-index: 1;
-  height: 324px;
   min-height: 324px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   min-width: 536px;
+  height: 100%;
 }
 
 .abcd-site > h2{

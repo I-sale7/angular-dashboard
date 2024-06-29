@@ -22,21 +22,10 @@
       </div>
     </div>
   </app-card>
-    
-  <app-card class="grid__box">
-    <h2 class="card__title">
-      <span>
-        Live events
-        <i class="fas fa-arrow-down-long card__status-icon"></i>
-      </span>
-      <span class="card__info-icon">i</span>
-    </h2>
 
-    <!-- Live eevents Chart -->
-    <app-live-events></app-live-events>
-  </app-card>
-  
-  <div class="grid__box wrapper--flex flex-dir--column flex-justify--between height--full">
+  <app-live-events></app-live-events>
+
+  <div class="grid__box wrapper--flex flex-col justify-between height--full">
     <app-card class="width--full">
       <h2 class="card__title">
         <span>
@@ -45,18 +34,18 @@
         </span>
         <span class="card__info-icon">i</span>
       </h2>
-      
+
       <!-- Device Distribution -->
-  
+
     </app-card>
 
     <app-weather-wizard></app-weather-wizard>
     <app-card class="width--full">
 
     </app-card>
-    
+
   </div>
-  
+
   <!-- Live Workers Trend per Zone -->
   <div id="live-workers" class="grid__box grid--2">
     <app-card class="width--full">
@@ -67,12 +56,12 @@
         </span>
         <span class="card__info-icon">i</span>
       </h2>
-      
+
       <!-- Live Workers Chart-->
       <app-live-workers></app-live-workers>
     </app-card>
   </div>
-  
+
   <!-- People Hazardous Zone / Critical Mission -->
   <div id="people-critical-zone" class="grid__box">
     <app-card class="width--full">
@@ -82,9 +71,9 @@
         </span>
         <span class="card__info-icon">i</span>
       </h2>
-      
+
       <!-- List -->
-  
+
     </app-card>
   </div>
 
@@ -92,7 +81,7 @@
   <!-- People Hazardous Zone / Critical Mission -->
   <div id="detailed-live-events" class="grid__box grid--3 detailed-live-events">
     <app-card class="width--full">
-      
+
       <div class="top-section">
         <div class="chart-pins">
           <div class="alerts">Alerts</div>
@@ -102,11 +91,11 @@
 
         <div>Last updated time 2:23 pm, Sunday </div>
       </div>
-      
+
       <!-- Charts Area -->
 
       <app-detailed-charts></app-detailed-charts>
-  
+
     </app-card>
   </div>
 </div>

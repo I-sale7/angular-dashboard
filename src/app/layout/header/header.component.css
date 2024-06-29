@@ -1,0 +1,77 @@
+/* Styles for the header */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  padding: 20px 40px;
+  color: #b2bac9;
+  font-size: 14px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #37393d;
+  border-radius: 8px;
+  border: 1px solid #37393D;
+
+  width: 380px;
+  &:hover {
+    color: #fff;
+    background-color: #2f3136;
+  }
+  input {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    background: transparent;
+    width: 100%;
+    &::placeholder {
+      color: #b2bac9;
+    }
+  }
+  i {
+    margin-inline: 10px;
+    color: #b2bac9;
+  }
+}
+
+.header-links {
+  display: flex;
+  color: #b2bac9;
+
+  a {
+    margin-left: 20px;
+    padding: 5px 16px;
+    border-radius: 8px;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: #37393d;
+    &:hover {
+      color: #fff;
+      background-color: #2f3136;
+    }
+    i {
+      color: inherit;
+    }
+  }
+
+  .modules-link {
+    i {
+      margin-right: 5px;
+    }
+  }
+  .notification-link {
+    font-size: 18px;
+  }
+  .user-image {
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

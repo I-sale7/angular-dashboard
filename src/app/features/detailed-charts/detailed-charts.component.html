@@ -1,0 +1,58 @@
+<div class="charts-container">
+  <div id="circle-chart">
+    <app-card>
+      <apx-chart [series]="circleChartOptions.series" [chart]="circleChartOptions.chart"
+        [legend]="circleChartOptions.legend" [stroke]="circleChartOptions.stroke"></apx-chart>
+    </app-card>
+  </div>
+  <div class="column-charts">
+    <app-card *ngFor="let column of columnChartOptions; let i = index">
+
+      <div class="column-chart">
+        <p class="chart-title">
+          Site {{ i + 1 }}
+        </p>
+        <div class="chart-card">
+          <div class="details">
+            <div>
+              <p class="text-secondary text-sm">Total Events</p>
+              <h4>{{column.totalEvent}} %</h4>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-4">
+                <p class="flex gap-2 items-center">
+                  <span class="text-secondary text-sm">
+                    Prev. Yr.
+                  </span>
+                  <span class="text-sm">
+                    {{column.prevYear}}%
+                  </span>
+                </p>
+
+                <span class="badge bg-danger">{{column.prevYearPercentage}}%</span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <p class="flex gap-2 items-center">
+                  <span class="text-secondary text-sm">
+                    Grp. Avg
+                  </span>
+                  <span class="text-sm">
+                    {{column.average}}%
+                  </span>
+                </p>
+                <span class="badge text-muted bg-secondary">{{column.averagePercentage}}%</span>
+              </div>
+            </div>
+          </div>
+          <apx-chart [series]="column.chart.series" [chart]="column.chart.chart" [xaxis]="column.chart.xaxis"
+            [plotOptions]="column.chart.plotOptions!" [yaxis]="column.chart.yaxis" [fill]="column.chart.fill"
+            [dataLabels]="column.chart.dataLabels!" [theme]="column.chart.theme" [legend]="column.chart.legend!"
+            [grid]="column.chart.grid"></apx-chart>
+        </div>
+
+      </div>
+    </app-card>
+
+  </div>
+</div>

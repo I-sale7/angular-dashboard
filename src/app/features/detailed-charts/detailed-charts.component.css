@@ -1,0 +1,50 @@
+.charts-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#circle-chart {
+  width: 40%;
+}
+
+.column-charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+
+.column-chart {
+  width: 100%;
+  padding: 20px;
+
+}
+
+.chart-title {
+  font-size: 18px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.chart-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  padding-top: 0;
+  .details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+p {
+  margin: 0;
+}
